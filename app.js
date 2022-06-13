@@ -17,7 +17,7 @@ app.use(cors({
 }));
 
 app.all('*', function(req, res, next) {
-  console.log(req.headers.origin)
+  console.log(req.headers.origin,666)
   console.log(req.environ)
   res.header("Access-Control-Allow-Origin", req.headers.origin);
   // res.header("Access-Control-Allow-Origin", '*');
